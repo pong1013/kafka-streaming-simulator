@@ -1,0 +1,6 @@
+confluent-kafka==2.4.0
+kafka-python==2.0.2
+aiokafka==0.10.0
+psycopg2-binary==2.9.9
+fastapi==0.85.1
+uvicorn==0.29.0
