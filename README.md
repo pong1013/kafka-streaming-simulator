@@ -24,3 +24,25 @@ kafka-project/
 |-- requirements.txt
 `-- README.md
 ```
+
+### Getting Start
+1. Create kafka broker `kafka/docker-compose.yml`
+   ```
+   docker compose up -d
+   ```
+2. Install python dependency
+   ```
+   pip install -r requirements.txt
+   ```
+3. Create Topics `src/topics/kafka_topics.py`
+   ```
+   python3 kafka_topics.py
+   ```
+4. Run producers `src/producers/.`
+   ```
+   python3 producer_1.py
+   ```
+5. Run Consumers `src/consumers/.`
+   ```
+   python3 consumer_1.py
+   ```
