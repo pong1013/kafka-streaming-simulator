@@ -24,6 +24,17 @@ kafka-project/
 |-- requirements.txt
 `-- README.md
 ```
+### MySQL
+- Create `.env` file in root path
+   ```
+   MYSQL_USER = USER
+   MYSQL_PASSWORD = PASSWORD
+   MYSQL_DATABASE = DB
+   MYSQL_ROOT_PASSWORD = ROOT PASSWORD
+   ```
+
+
+
 
 ### Getting Start
 1. Create kafka broker `kafka/docker-compose.yml`
@@ -38,11 +49,15 @@ kafka-project/
    ```
    python3 kafka_topics.py
    ```
-4. Run producers `src/producers/.`
+4. Create MySQL Tables
+   ```
+   python3 exec_sql.py
+   ```
+5. Run producers `src/producers/.`
    ```
    python3 producer_1.py
    ```
-5. Run Consumers `src/consumers/.`
+6. Run Consumers `src/consumers/.`
    ```
    python3 consumer_1.py
    ```
